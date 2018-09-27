@@ -1,0 +1,12 @@
+<h1>Schedules</h1>
+
+<ul>
+  <% @schedules.each do |schedule| %>
+    <li><%= link_to schedule.name, schedule %></li>
+  <% end %>
+</ul>
+
+<footer>
+  <%= link_to "Add New Schedule", new_schedule_path %>
+
+</footer>
