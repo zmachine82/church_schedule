@@ -1,0 +1,13 @@
+<%= form_for([@schedule, @event]) do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :service %>
+    <%= f.text_field :service %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
